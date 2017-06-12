@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4814F65C1E40B58700DE608E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814F65B1E40B58700DE608E /* main.m */; };
+		4814F65F1E40B58700DE608E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814F65E1E40B58700DE608E /* AppDelegate.m */; };
+		4814F6651E40B58700DE608E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4814F6631E40B58700DE608E /* Main.storyboard */; };
+		4814F6671E40B58700DE608E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4814F6661E40B58700DE608E /* Assets.xcassets */; };
+		4814F66A1E40B58700DE608E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4814F6681E40B58700DE608E /* LaunchScreen.storyboard */; };
+		4814F6751E40B58900DE608E /* LocalNotificationAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814F6741E40B58900DE608E /* LocalNotificationAppTests.m */; };
+		4814F6801E40B58900DE608E /* LocalNotificationAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4814F67F1E40B58900DE608E /* LocalNotificationAppUITests.m */; };
+		489018AB1E41C51C00ABFBD3 /* ToDoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 489018AA1E41C51C00ABFBD3 /* ToDoListVC.m */; };
+		489018AE1E41C54200ABFBD3 /* AddToDoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 489018AD1E41C54200ABFBD3 /* AddToDoListVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4814F6711E40B58800DE608E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4814F64F1E40B58600DE608E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4814F6561E40B58600DE608E;
+			remoteInfo = LocalNotificationApp;
+		};
+		4814F67C1E40B58900DE608E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4814F64F1E40B58600DE608E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4814F6561E40B58600DE608E;
+			remoteInfo = LocalNotificationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4814F6571E40B58600DE608E /* LocalNotificationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4814F65B1E40B58700DE608E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4814F65D1E40B58700DE608E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4814F65E1E40B58700DE608E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4814F6641E40B58700DE608E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4814F6661E40B58700DE608E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4814F6691E40B58700DE608E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4814F66B1E40B58700DE608E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4814F6701E40B58800DE608E /* LocalNotificationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4814F6741E40B58900DE608E /* LocalNotificationAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationAppTests.m; sourceTree = "<group>"; };
+		4814F6761E40B58900DE608E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4814F67B1E40B58900DE608E /* LocalNotificationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalNotificationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4814F67F1E40B58900DE608E /* LocalNotificationAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationAppUITests.m; sourceTree = "<group>"; };
+		4814F6811E40B58900DE608E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489018A91E41C51C00ABFBD3 /* ToDoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListVC.h; sourceTree = "<group>"; };
+		489018AA1E41C51C00ABFBD3 /* ToDoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListVC.m; sourceTree = "<group>"; };
+		489018AC1E41C54200ABFBD3 /* AddToDoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoListVC.h; sourceTree = "<group>"; };
+		489018AD1E41C54200ABFBD3 /* AddToDoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoListVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4814F6541E40B58600DE608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F66D1E40B58800DE608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F6781E40B58900DE608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4814F64E1E40B58500DE608E = {
+			isa = PBXGroup;
+			children = (
+				4814F6591E40B58600DE608E /* LocalNotificationApp */,
+				4814F6731E40B58800DE608E /* LocalNotificationAppTests */,
+				4814F67E1E40B58900DE608E /* LocalNotificationAppUITests */,
+				4814F6581E40B58600DE608E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4814F6581E40B58600DE608E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4814F6571E40B58600DE608E /* LocalNotificationApp.app */,
+				4814F6701E40B58800DE608E /* LocalNotificationAppTests.xctest */,
+				4814F67B1E40B58900DE608E /* LocalNotificationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4814F6591E40B58600DE608E /* LocalNotificationApp */ = {
+			isa = PBXGroup;
+			children = (
+				4814F65D1E40B58700DE608E /* AppDelegate.h */,
+				4814F65E1E40B58700DE608E /* AppDelegate.m */,
+				4814F6631E40B58700DE608E /* Main.storyboard */,
+				4814F6661E40B58700DE608E /* Assets.xcassets */,
+				4814F6681E40B58700DE608E /* LaunchScreen.storyboard */,
+				4814F66B1E40B58700DE608E /* Info.plist */,
+				4814F65A1E40B58600DE608E /* Supporting Files */,
+				489018A91E41C51C00ABFBD3 /* ToDoListVC.h */,
+				489018AA1E41C51C00ABFBD3 /* ToDoListVC.m */,
+				489018AC1E41C54200ABFBD3 /* AddToDoListVC.h */,
+				489018AD1E41C54200ABFBD3 /* AddToDoListVC.m */,
+			);
+			path = LocalNotificationApp;
+			sourceTree = "<group>";
+		};
+		4814F65A1E40B58600DE608E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4814F65B1E40B58700DE608E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4814F6731E40B58800DE608E /* LocalNotificationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				4814F6741E40B58900DE608E /* LocalNotificationAppTests.m */,
+				4814F6761E40B58900DE608E /* Info.plist */,
+			);
+			path = LocalNotificationAppTests;
+			sourceTree = "<group>";
+		};
+		4814F67E1E40B58900DE608E /* LocalNotificationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4814F67F1E40B58900DE608E /* LocalNotificationAppUITests.m */,
+				4814F6811E40B58900DE608E /* Info.plist */,
+			);
+			path = LocalNotificationAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4814F6561E40B58600DE608E /* LocalNotificationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4814F6841E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationApp" */;
+			buildPhases = (
+				4814F6531E40B58600DE608E /* Sources */,
+				4814F6541E40B58600DE608E /* Frameworks */,
+				4814F6551E40B58600DE608E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocalNotificationApp;
+			productName = LocalNotificationApp;
+			productReference = 4814F6571E40B58600DE608E /* LocalNotificationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4814F66F1E40B58800DE608E /* LocalNotificationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4814F6871E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationAppTests" */;
+			buildPhases = (
+				4814F66C1E40B58800DE608E /* Sources */,
+				4814F66D1E40B58800DE608E /* Frameworks */,
+				4814F66E1E40B58800DE608E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4814F6721E40B58800DE608E /* PBXTargetDependency */,
+			);
+			name = LocalNotificationAppTests;
+			productName = LocalNotificationAppTests;
+			productReference = 4814F6701E40B58800DE608E /* LocalNotificationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4814F67A1E40B58900DE608E /* LocalNotificationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4814F68A1E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationAppUITests" */;
+			buildPhases = (
+				4814F6771E40B58900DE608E /* Sources */,
+				4814F6781E40B58900DE608E /* Frameworks */,
+				4814F6791E40B58900DE608E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4814F67D1E40B58900DE608E /* PBXTargetDependency */,
+			);
+			name = LocalNotificationAppUITests;
+			productName = LocalNotificationAppUITests;
+			productReference = 4814F67B1E40B58900DE608E /* LocalNotificationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4814F64F1E40B58600DE608E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = mindfire;
+				TargetAttributes = {
+					4814F6561E40B58600DE608E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					4814F66F1E40B58800DE608E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4814F6561E40B58600DE608E;
+					};
+					4814F67A1E40B58900DE608E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4814F6561E40B58600DE608E;
+					};
+				};
+			};
+			buildConfigurationList = 4814F6521E40B58600DE608E /* Build configuration list for PBXProject "LocalNotificationApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4814F64E1E40B58500DE608E;
+			productRefGroup = 4814F6581E40B58600DE608E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4814F6561E40B58600DE608E /* LocalNotificationApp */,
+				4814F66F1E40B58800DE608E /* LocalNotificationAppTests */,
+				4814F67A1E40B58900DE608E /* LocalNotificationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4814F6551E40B58600DE608E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4814F66A1E40B58700DE608E /* LaunchScreen.storyboard in Resources */,
+				4814F6671E40B58700DE608E /* Assets.xcassets in Resources */,
+				4814F6651E40B58700DE608E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F66E1E40B58800DE608E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F6791E40B58900DE608E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4814F6531E40B58600DE608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489018AE1E41C54200ABFBD3 /* AddToDoListVC.m in Sources */,
+				4814F65F1E40B58700DE608E /* AppDelegate.m in Sources */,
+				489018AB1E41C51C00ABFBD3 /* ToDoListVC.m in Sources */,
+				4814F65C1E40B58700DE608E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F66C1E40B58800DE608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4814F6751E40B58900DE608E /* LocalNotificationAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4814F6771E40B58900DE608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4814F6801E40B58900DE608E /* LocalNotificationAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4814F6721E40B58800DE608E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4814F6561E40B58600DE608E /* LocalNotificationApp */;
+			targetProxy = 4814F6711E40B58800DE608E /* PBXContainerItemProxy */;
+		};
+		4814F67D1E40B58900DE608E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4814F6561E40B58600DE608E /* LocalNotificationApp */;
+			targetProxy = 4814F67C1E40B58900DE608E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4814F6631E40B58700DE608E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4814F6641E40B58700DE608E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4814F6681E40B58700DE608E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4814F6691E40B58700DE608E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4814F6821E40B58900DE608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4814F6831E40B58900DE608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4814F6851E40B58900DE608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocalNotificationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4814F6861E40B58900DE608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocalNotificationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4814F6881E40B58900DE608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocalNotificationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalNotificationApp.app/LocalNotificationApp";
+			};
+			name = Debug;
+		};
+		4814F6891E40B58900DE608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocalNotificationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocalNotificationApp.app/LocalNotificationApp";
+			};
+			name = Release;
+		};
+		4814F68B1E40B58900DE608E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocalNotificationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LocalNotificationApp;
+			};
+			name = Debug;
+		};
+		4814F68C1E40B58900DE608E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocalNotificationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mindfire.LocalNotificationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LocalNotificationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4814F6521E40B58600DE608E /* Build configuration list for PBXProject "LocalNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4814F6821E40B58900DE608E /* Debug */,
+				4814F6831E40B58900DE608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4814F6841E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4814F6851E40B58900DE608E /* Debug */,
+				4814F6861E40B58900DE608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4814F6871E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4814F6881E40B58900DE608E /* Debug */,
+				4814F6891E40B58900DE608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4814F68A1E40B58900DE608E /* Build configuration list for PBXNativeTarget "LocalNotificationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4814F68B1E40B58900DE608E /* Debug */,
+				4814F68C1E40B58900DE608E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4814F64F1E40B58600DE608E /* Project object */;
+}

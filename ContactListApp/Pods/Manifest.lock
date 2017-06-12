@@ -1,0 +1,12 @@
+PODS:
+  - ContactsManager (0.3.3)
+
+DEPENDENCIES:
+  - ContactsManager
+
+SPEC CHECKSUMS:
+  ContactsManager: e0f327e7d41f9052c1ae2e5665e395902ba692ad
+
+PODFILE CHECKSUM: f340bebe555ce074fa5cc857fb2d322de60dcb7d
+
+COCOAPODS: 1.2.0

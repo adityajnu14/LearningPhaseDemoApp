@@ -1,0 +1,115 @@
+//
+//  LoginPageViewController.m
+//  Virtual Mall
+//
+//  Created by Aditya Kumar on 09/03/17.
+//  Copyright © 2017 mindfire. All rights reserved.
+//
+
+#import "LoginPageViewController.h"
+
+@interface LoginPageViewController () <UITextFieldDelegate>
+
+@end
+
+@implementation LoginPageViewController
+
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    [self setTapGestureRecognizer];
+}
+
+- (void) didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self setborderColor];
+}
+
+- (void) setTapGestureRecognizer
+{
+    UITapGestureRecognizer* tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                                action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tapGesture];
+}
+
+- (void) dismissKeyboard
+{
+    [self.emailInputTextField resignFirstResponder];
+    [self.passwordInputTextField resignFirstResponder];
+}
+
+- (void) setborderColor
+{
+    self.emailInputTextField.layer.borderColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1.0].CGColor;
+    self.passwordInputTextField.layer.borderColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1.0].CGColor;
+}
+
+- (IBAction) loginButtonAction:(id)sender
+{
+    if([self authenticateUserCredential])
+        [self performSegueWithIdentifier:@"loginUser" sender:nil];
+    else if(![self.emailInputTextField.text isEqualToString:@"a@g.com"] && ![self.passwordInputTextField.text isEqualToString:@"abc"])
+        [self promptErrorMessage:@"Invalid Email and Password"];
+    else if(![self.emailInputTextField.text isEqualToString:@"a@g.com"])
+        [self promptErrorMessage:@"Invalid Email"];
+    else if(![self.passwordInputTextField.text isEqualToString:@"a@g.com"])
+        [self promptErrorMessage:@"Invalid Password"];
+}
+
+- (BOOL) authenticateUserCredential
+{
+    if([self.emailInputTextField.text isEqualToString:@"a@g.com"] && [self.passwordInputTextField.text isEqualToString:@"abc"])
+        return YES;
+    else
+        return NO;
+}
+
+- (void) promptErrorMessage:(NSString *)message
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Alert!"
+                                                                    message:message
+                                                                    preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction* action){}];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+- (BOOL) validateEmail:(NSString*)emailString
+{
+    NSString* emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:emailString];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void) textFieldDidEndEditing:(UITextField *)textField
+{
+    if(textField.tag == 1)
+    {
+       if(![self validateEmail:textField.text])
+           [self promptErrorMessage:@"Enter valid Email"];
+    }
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark - Navigation
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
+@end
